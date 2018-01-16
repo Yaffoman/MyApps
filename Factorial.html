@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Factorial Calculator</title>
+</head>
+
+<h1 align="center"  style="color:#F8F8F8" >Factorial Calculator</h1>
+<body background="test_Background.jpg">
+
+<form id="myform">
+<center>
+Enter a number
+<input type="text" name="num" id="num" value="Not too big" onclick= "clearme()" >
+<input type="button" value = "Go" onclick="fact(num.value)" >
+</center>
+</form>
+
+<textarea id="ethan" rows="40" cols="80"  readonly style="align:center; position:relative;left:350px; border:5px solid #C1CDC1">
+Numbers will appear here...
+</textarea>
+
+
+
+<script src="factorial.js"></script>
+<script>
+function clearme(){
+num.value="";
+
+}
+
+function fact(n)
+{
+ethan.value=factorial(n);
+}
+
+</script>
+
+</body>
+</html>

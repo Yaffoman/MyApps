@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fibonacci Calculator</title>
+</head>
+
+
+<body background="test_Background.jpg">
+<h1 align="center"  style="color:#F8F8F8" >Fibonacci Calculator</h1>
+<form id="myform">
+<center>
+Enter a number
+<input type="text" name="num" id="input" value="Not too big" onclick= "clearme()" >
+<input type="button" value = "Go" onclick="fiber(input.value)" >
+</center>
+</form>
+
+<textarea id="output" rows="40" cols="80"   style=" position:relative;left:350px; border:5px solid #C1CDC1">
+Numbers will appear here...
+</textarea>
+
+
+
+<script src="fibcalc.js"></script>
+<script>
+function clearme(){
+input.value="";
+
+}
+
+function fiber(number)
+{
+output.value=fibcalc(number);
+
+}
+
+</script>
+
+</body>
+</html>
